@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header section -->
+    <div class="container">
+        <div class="header">
+            <h2 class="text-muted py-3 my-3">Bookmarker</h2>
+        </div>
+    </div>
+    <!-- main section -->
+    <div class="container my-3 py-3 bg-light rounded-2">
+        <div class="main-container text-center">
+            <p class="fw-bolder fs-2 m-0 py-1 text-capitalize">Bookmark your favorite sites</p>
+            <label for="siteName" class="text-center fw-bolder fs-5 py-2">Site Name</label>
+                <input type="text" id="siteName" class="form-control w-75 m-auto">
+                <p id="name-alert" class="alert alert-danger w-75 m-auto d-none">Site Name empty</p>
+                <p id="exist" class="alert alert-danger w-75 m-auto d-none">Site Name Exist</p>
+
+
+                <label for="siteLink" class="text-center fw-bolder fs-5 py-2">Site URL</label>
+                <input type="text" id="siteLink" class="form-control w-75 m-auto">
+                <p id="url-alert" class="alert alert-danger w-75 m-auto d-none">Site URL empty</p>
+
+                <button  id="submit" class="d-block pb-2 m-auto btn btn-outline-primary mt-3 btn-lg">Submit</button>
+                
+                <label for="siteSearch" class="text-start fw-bolder fs-5 py-2">Search by Site Name</label>
+                <input type="search" id="siteSearch" class="form-control w-75 m-auto">
+        </div>
+    </div>
+        <!-- result section -->
+        <div class="container my-3 py-3 rounded-2 bg-light">
+            <div class="result">
+             <div class="table-responsive-md">
+                <table class="table table-striped m-auto px-2 py-2">
+                    <thead class="fs-5">
+                        <th>Bookmarke Name</th>
+                        <th>Visit URL</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </thead>
+
+                <tbody id="tableData">
+                    <!-- <tr>
+                        <td>SiteName</td>
+                        <td><a target="_blank" href="http://">Visit</a></td>
+                        <td> <a class="update">Update</a></td>
+                        <td> <a class="delete">Delete</a></td>
+                    </tr> -->
+                  
+                </tbody>
+            </table>
+             </div>
+            </div>
+
+        </div>
+
+   
+    <!-- fotter section -->
+
+    <div class="container">
+        <div class="fotter">
+            <p class="text-muted fw-bolder pt-3">© 2023 Bookmarker Inc.</p>
+        </div>
+    </div>
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
